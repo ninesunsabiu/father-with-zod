@@ -1,0 +1,31 @@
+{
+  "name": "father-with-zod",
+  "version": "0.0.1",
+  "description": "a bug minimal repo",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev --no-clean",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [
+    "ninesuns.lin@outlook.com"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "father": "^4.3.7"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
